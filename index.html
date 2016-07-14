@@ -1,16 +1,96 @@
-<!doctype html>
-
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Music History</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="music.css">
 </head>
-
 <body>
-	<div>
-		Tsting	
-	</div>
 
+<!-- *********** Navbar *********** -->
+<div>	
+	<div class="navbar">
+	<header>
+		<nav>
+			<ul class="links">
+				<li><a href="#">View Music</a></li>
+				<li><a href="#">Add Music</a></li>
+				<li><a href="#">Profile</a></li>
+			</ul>
+		</nav>
+	</header>
+</div>
+
+<!-- *********** Options Box *********** -->
+
+<div class="options">
+	<div class="length-label">
+		<label>Song Length:</label>
+	</div>
+	<div class="slider">
+		<input type="range" class="length">
+	</div>
+	<div class="artists-label">
+		<label>Artist:</label>
+	</div>
+	<div class="artists">
+		<select class="artists-select">
+			<option disabled selected>Options</option>
+			<option>The Mars Volta</option>
+			<option>Portugal. The Man</option>
+			<option>Dr Dog</option>
+			<option>Porcupine Tree</option>
+			<option>Morning Teleportation</option>
+		</select>
+	</div>
+	<div class="albums-label">
+		<label>Album:</label>
+	</div>
+	<div class="albums">
+		<select class="albums-select">
+			<option disabled selected>Options</option>
+			<option>De-Loused In the Comatorium</option>
+			<option>Censored Colors</option>
+			<option>Fate</option>
+			<option>Fear of a Blank Planet</option>
+			<option>Expanding Anyway</option>
+		</select>
+	</div>
+	<div class="genre-label">
+		<label>Genre:</label>
+	</div>
+	<div class="checkbox">
+		<label class="check-label"><input type="checkbox">Alternative Rock</label>
+		<label class="check-label"><input class="check-label" type="checkbox">Progressive Rock</label>
+		<label class="check-label"><input class="check-label" type="checkbox">Psychadelic Rock</label>
+		<label class="check-label"><input class="check-label" type="checkbox">Rock, Paper, Scissor</label>
+	</div>
+	<div class="button">
+		<button class="filter-button">Filter</button>
+	</div>
+</div>
+
+<!-- *********** Songs Box *********** -->
+
+<div class="songs">
+	<h2 class="song-name">Roulette Dares (The Haunt Of)</h2>
+	<div class="song-info">
+		<h4>The Mars Volta | De-Loused In the Comatorium | Progressive Rock</h4>
+	</div>
+	<h2 class="song-name">And I</h2>
+	<div class="song-info">
+		<h4>Portugal. The Man | Censorded Colors | Alternative Rock</h4>
+	</div>
+	<h2 class="song-name">Whole Hearted Drifting Sense of Inertia</h2>
+	<div class="song-info">
+		<h4>Morning Teleportation | Expanding Anyway | Psychadelic Rock</h4>
+	</div>
+	<h2 class="song-name">The Ark</h2>
+	<div class="song-info">
+		<h4>Dr Dog | Fate | Alternative Rock</h4>
+	</div>
+</div>
 
 </body>
 </html>
