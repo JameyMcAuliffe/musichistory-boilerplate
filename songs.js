@@ -16,14 +16,22 @@ songs.push("Cloud Zero > by Porcupine Tree on the album Up the Downstair");
 
 // Loop over the array and remove any words or characters that obviously don't belong.
 // Students must find and replace the > character in each item with a - character.
+
+//Must add each string to the DOM in index.html in the main content area.
+
+var songsList = document.getElementById("songs");
+
 for (var i = 0; i < songs.length; i++) {
 	var song = songs[i];
 	song = song.replace(/[@\*\(\!]/g, "");
 	song = song.replace(/>/g, "-");
-	//console.log(song);
+	var newH3 = document.createElement("h3");
+	newH3.innerHTML = song;
+	songsList.appendChild(newH3);
 }
 
-//Must add each string to the DOM in index.html in the main content area.
+
+
 
 
 
